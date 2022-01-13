@@ -1,7 +1,5 @@
 import create from "zustand";
 import React, { useState } from "react";
-import styled from "@emotion/styled";
-import Button from "@mui/material/Button";
 import { v4 as uuid } from "uuid";
 //import { useStore } from "react";
 
@@ -88,7 +86,7 @@ function App() {
         <ul>
           {todos.map((todo, index) => {
             return (
-              <ListItem key={todo.id}>
+              <li key={todo.id}>
                 <label>
                   <input
                     type="checkbox"
@@ -117,7 +115,7 @@ function App() {
                 >
                   Delete
                 </button>
-              </ListItem>
+              </li>
             );
           })}
         </ul>
